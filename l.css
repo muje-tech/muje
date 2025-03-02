@@ -1,0 +1,60 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-actions button {
+    margin-left: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+#videoList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.video-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.video-item video {
+    width: 100%;
+    height: auto;
+}
+
+#uploadForm, #authForms {
+    margin-bottom: 20px;
+}
+
+.error-message {
+    color: red;
+}
+
+.video-details {
+    margin-top: 10px;
+}
+
+.comments-section {
+    margin-top: 20px;
+}
+
+.comments-section textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,33 @@
+/* style.css */
+
+body {
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* ... (rest of the CSS remains largely the same, but you might want to adjust colors and styling to fit the "WebCraft" theme) ... */
+
+header {
+    background: linear-gradient(135deg, #f1b80b, #00b0ff); /* Example: Blue theme */
+    color: #fff;
+    padding: 20px 0;
+}
+
+.btn {
+    background-color: #f03f08; /* Example: Blue theme */
+    color: #fff;
+}
+
+.btn-secondary {
+    border: 2px solid #ff0011; /* Example: Blue theme */
+    color: #00ff95;
+}
+
+.feature i, .service i {
+    color: #ee07b4; /* Example: Blue theme */
+}
+
+/* ... (Continue adjusting as needed) ... */

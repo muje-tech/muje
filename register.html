@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Login & Registration</title>
+    <link rel="stylesheet" href="e.css"> </head>
+<body>
+    <div class="auth-container">
+        <div class="auth-tabs">
+            <button class="tab-button active" data-tab="login">Login</button>
+            <button class="tab-button" data-tab="register">Register</button>
+            <button class="tab-button" data-tab="forgot-password">Forgot Password</button>
+        </div>
+
+        <div class="auth-form login-form active" id="login">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginUsername">Username/Email</label>
+                    <input type="text" id="loginUsername" name="loginUsername" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" name="loginPassword" required>
+                </div>
+                <div class="form-group remember-me">
+                    <input type="checkbox" id="rememberMe" name="rememberMe">
+                    <label for="rememberMe">Remember Me</label>
+                </div>
+                <button type="submit">Login</button>
+                <div class="error-message" id="loginErrorMessage"></div>
+            </form>
+            <div class="social-login">
+                <p>Or login with:</p>
+                <div class="social-buttons">
+                    <button class="social-button facebook">Facebook</button>
+                    <button class="social-button google">Google</button>
+                    <button class="social-button twitter">Twitter</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="auth-form register-form" id="register">
+            <h2>Register</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="registerUsername">Username</label>
+                    <input type="text" id="registerUsername" name="registerUsername" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" name="registerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Password</label>
+                    <input type="password" id="registerPassword" name="registerPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                <button type="submit">Register</button>
+                <div class="error-message" id="registerErrorMessage"></div>
+            </form>
+        </div>
+
+        <div class="auth-form forgot-password-form" id="forgot-password">
+            <h2>Forgot Password</h2>
+            <form id="forgotPasswordForm">
+                <div class="form-group">
+                    <label for="forgotEmail">Email</label>
+                    <input type="email" id="forgotEmail" name="forgotEmail" required>
+                </div>
+                <button type="submit">Reset Password</button>
+                <div class="error-message" id="forgotErrorMessage"></div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

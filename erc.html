@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elizabeth Rot Creations (ERC) - Immersive Haute Couture & Bespoke Experience</title>
+    <link rel="stylesheet" href="erc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/video.js@7/dist/video-js.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tween.js@18.6.4/dist/tween.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat.gui/0.7.9/dat.gui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/stats.js@0.17.0/build/stats.min.js"></script>
+    <script src="erc.js"></script>
+</head>
+<body>
+   
+
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Elizabeth Rot Creations (ERC)</a>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="collections.html">Collections</a>
+                        <ul class="dropdown">
+                            <li><a href="haute-couture.html">Haute Couture</a></li>
+                            <li><a href="ready-to-wear.html">Ready-to-Wear</a></li>
+                            <li><a href="bridal-occasion.html">Bridal & Occasion</a></li>
+                            <li><a href="accessories.html">Accessories</a></li>
+                            <li><a href="limited-editions.html">Limited Editions</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="bespoke.html">Bespoke</a></li>
+                    <li><a href="services.html">Services</a>
+                        <ul class="dropdown">
+                            <li><a href="personal-styling.html">Personal Styling</a></li>
+                            <li><a href="alterations.html">Alterations & Repairs</a></li>
+                            <li><a href="fabric-consultation.html">Fabric Consultation</a></li>
+                            <li><a href="virtual-consultation.html">Virtual Consultation</a></li>
+                            <li><a href="wardrobe-curation.html">Wardrobe Curation</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="atelier.html">Atelier</a></li>
+                    <li><a href="journal.html">Journal</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="sustainability.html">Sustainability</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart (0)</a></li>
+                    <li class="account"><a href="account.html" id="accountLink"><i class="fas fa-user"></i> Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1 data-aos="fade-up" data-aos-duration="1200">Experience the Art of Immersive Couture & Bespoke Tailoring.</h1>
+            <p data-aos="fade-up" data-aos-duration="1400" data-aos-delay="200">Where timeless elegance meets cutting-edge technology and personalized artistry.</p>
+            <a href="bespoke.html" class="btn" data-aos="fade-up" data-aos-duration="1600" data-aos-delay="400">Begin Your Immersive Design Journey</a>
+        </div>
+        <div class="hero-bg"></div>
+    </section>
+
+    <section class="swiper-container featured-slider" data-aos="fade-in" data-aos-duration="1000">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide immersive-slide" data-collection="haute-couture">
+                <img src="images/haute-couture-slide.jpg" alt="Haute Couture Collection">
+                <div class="slide-content">
+                    <h2>Haute Couture Collection</h2>
+                    <p>Enter a world of unparalleled craftsmanship and design.</p>
+                    <button class="immersive-btn">Enter Immersive Experience</button>
+                </div>
+            </div>
+            <div class="swiper-slide immersive-slide" data-collection="bespoke">
+                <img src="images/bespoke-slide.jpg" alt="Bespoke Tailoring">
+                <div class="slide-content">
+                    <h2>Bespoke Tailoring</h2>
+                    <p>Visualize your garment in a virtual fitting room.</p>
+                    <button class="immersive-btn">Launch Virtual Fitting</button>
+                </div>
+            </div>
+            <div class="swiper-slide immersive-slide" data-collection="bridal-occasion">
+                <img src="images/bridal-occasion-slide.jpg" alt="Bridal & Occasion Wear">
+                <div class="slide-content">
+                    <h2>Bridal & Occasion Wear</h2>
+                    <p>Experience the magic of your special day with AR previews.</p>
+                    <button class="immersive-btn">View AR Preview</button>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </section>
+
+    <section class="interactive-design-tool" data-aos="fade-up" data-aos-duration="1200">
+        <div class="container">
+            <h2>Design Your Bespoke Creation with Our 3D Customizer</h2>
+            <p>Utilize our advanced 3D design tool to craft your perfect garment with real-time visualization and customization.</p>
+            <div class="design-tool-container">
+                <div class="placeholder-interactive-tool">
+                    <div id="three-container"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="atelier-experience" data-aos="fade-in" data-aos-duration="1000">
+        <div class="container">
+            <h2>The ERC Atelier: A Blend of Tradition and Innovation</h2>
+            <p>Witness the fusion of traditional tailoring techniques with cutting-edge technology.</p>
+            <div class="experience-grid">
+                <div class="experience-item">
+                    <i class="fas fa-vr-cardboard"></i>
+                    <h3>Virtual Reality Design</h3>
+                    <p>Experience your designs in a fully immersive VR environment.</p>
+                </div>
+                <div class
+                

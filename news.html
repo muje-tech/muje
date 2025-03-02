@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyper Newsletter Platform</title>
+    <link rel="stylesheet" href="stye.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Hyper News Hub</div>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Workspaces</a></li>
+                <li><a href="#">Notifications</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Admin</a></li>
+            </ul>
+            <div class="auth">
+                <a href="#">Login</a>
+                <a href="register.html">Register</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="dashboard">
+            <h2>My Dashboard</h2>
+            <div class="dashboard-widgets">
+                <div class="widget">
+                    <h3>Live Feed</h3>
+                    <div id="liveFeed"></div>
+                </div>
+                <div class="widget">
+                    <h3>Trending Topics</h3>
+                    <div id="trendingTopics"></div>
+                </div>
+                <div class="widget">
+                    <h3>My Subscriptions</h3>
+                    <div id="dashboardSubscriptions"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="search-and-filter">
+            <h2>Advanced Search</h2>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+            <div class="filter-options">
+                <div class="facet-filters">
+                    <h3>Categories</h3>
+                    <div id="categoryFacets"></div>
+                </div>
+                <div class="facet-filters">
+                    <h3>Authors</h3>
+                    <div id="authorFacets"></div>
+                </div>
+                <div class="facet-filters">
+                    <h3>Tags</h3>
+                    <div id="tagFacets"></div>
+                </div>
+                <div class="range-filters">
+                    <h3>Publication Date</h3>
+                    <input type="date" id="startDate">
+                    <input type="date" id="endDate">
+                </div>
+            </div>
+            <div id="searchResults"></div>
+        </section>
+
+        <section class="workspaces">
+            <h2>Workspaces</h2>
+            <div class="workspace-list">
+                <div class="workspace-item">
+                    <h3>Project Alpha</h3>
+                    <p>Collaborative content creation.</p>
+                    <a href="#">Enter Workspace</a>
+                </div>
+                <div class="workspace-item">
+                    <h3>Research Group</h3>
+                    <p>Shared research and analysis.</p>
+                    <a href="#">Enter Workspace</a>
+                </div>
+            </div>
+            <button>Create Workspace</button>
+        </section>
+
+        <section class="notifications">
+            <h2>Notifications</h2>
+            <div id="notificationList"></div>
+        </section>
+
+        <section class="user-profile">
+            <h2>User Profile</h2>
+            <div class="profile-details">
+                <img src="placeholder-profile.jpg" alt="Profile Picture">
+                <h3>User Name</h3>
+                <p>Email: user@example.com</p>
+                <p>Location: City, Country</p>
+                <button>Edit Profile</button>
+            </div>
+            <div class="profile-permissions">
+                <h3>Permissions</h3>
+                <div id="userPermissions"></div>
+            </div>
+            <div class="profile-settings">
+              <h3>Settings</h3>
+              <div id="userSettings"></div>
+            </div>
+        </section>
+
+        <section class="admin-panel" style="display: none;">
+            <h2>Admin Dashboard</h2>
+            <div class="admin-modules">
+                <button id="contentManager">Content Manager</button>
+                <button id="userManager">User Manager</button>
+                <button id="permissionManager">Permission Manager</button>
+                <button id="analyticsManager">Analytics Manager</button>
+                <button id="integrationManager">Integration Manager</button>
+                <button id="systemLogs">System Logs</button>
+            </div>
+            <div id="contentManagerModule" style="display: none;"></div>
+            <div id="userManagerModule" style="display: none;"></div>
+            <div id="permissionManagerModule" style="display: none;"></div>
+            <div id="analyticsManagerModule" style="display: none;"></div>
+            <script src="index.js" defer></script>

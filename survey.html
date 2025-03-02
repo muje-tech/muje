@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced User Experience & Feedback Analytics Platform</title>
+    <script src="w.js"></script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.9;
+            color: #3a3a3a;
+            background-color: #f5f8fa;
+        }
+        .container {
+            width: 95%;
+            max-width: 1400px;
+            margin: 40px auto;
+            padding: 30px;
+        }
+        .section {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 7px 20px rgba(0, 0, 0, 0.12);
+            padding: 40px;
+            margin-bottom: 50px;
+        }
+        .section h2 {
+            color: #2c3e50;
+            border-bottom: 3px solid #e0e0e0;
+            padding-bottom: 25px;
+            margin-bottom: 40px;
+            font-weight: 700;
+            font-size: 28px;
+        }
+        .question {
+            margin-bottom: 45px;
+        }
+        .question label {
+            display: block;
+            margin-bottom: 18px;
+            font-weight: 600;
+            color: #34495e;
+            font-size: 18px;
+        }
+        .question input[type="radio"],
+        .question input[type="checkbox"] {
+            margin-right: 15px;
+        }
+        .question textarea,
+        .question input[type="text"],
+        .question select,
+        .question input[type="email"],
+        .question input[type="number"],
+        .question input[type="date"],
+        .question input[type="time"],
+        .question input[type="url"],
+        .question input[type="tel"],
+        .question input[type="password"],
+        .question input[type="range"] {
+            width: calc(100% - 32px);
+            padding: 18px;
+            box-sizing: border-box;
+            border: 2px solid #d1d8e0;
+            border-radius: 10px;
+            margin-top: 15px;
+            font-size: 17px;
+            transition: border-color 0.3s ease;
+        }
+        .question textarea {
+            resize: vertical;
+        }
+        .matrix-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+            font-size: 17px;
+        }
+        .matrix-table th, .matrix-table td {
+            border: 2px solid #e0e0e0;
+            padding: 20px;
+            text-align: center;
+        }
+        .matrix-table th {
+            background-color: #f2f2f2;
+            font-weight: 600;
+        }
+        .range-slider {
+            width: 100%;
+        }
+        .range-slider input[type="range"] {
+            width: calc(100% - 40px);
+            margin: 22px 20px;
+        }
+        .range-slider span {
+            display: inline-block;
+            width: 40px;
+            text-align: center;
+            font-size: 18px;
+        }
+        .conditional-question {
+            display: none;
+            margin-left: 35px;
+        }
+        .question input[type="text"]:focus,
+        .question textarea:focus,
+        .question select:focus,
+        .question input[type="email"]:focus,
+        .question input[type="number"]:focus,
+        .question input[type="date"]:focus,
+        .question input[type="time"]:focus,
+        .question input[type="url"]:focus,
+        .question input[type="tel"]:focus,
+        .question input[type="password"]:focus,
+        .question input[type="range"]:focus {
+            border-color: #3498db;
+            outline: none;
+            box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+        }
+        .question input[type="file"] {
+            margin-top: 20px;
+        }
+        .question input[type="file"]::-webkit-file-upload-button {
+            padding: 15px 30px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 17px;
+        }
+        .question input[type="range"] {
+            -webkit-appearance: none;
+            width: calc(100% - 40px);
+            background: #d3d3d3;
+            border-radius: 5px;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+        }
+
+        .question input[type="range"]:hover {
+            opacity: 1;
+        }
+
+        .question input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            background: #3498db;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        .question input[type="range"]::-moz-range-thumb {
+            width: 25px;
+            height: 25px;
+            background: #3498db;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="w.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Advanced User Experience & Feedback Analytics Platform</h1>
+        <p>We are committed to delivering exceptional user experiences through in-depth feedback analysis. Your insights are invaluable for our continuous improvement and innovation.</p>
+
+        <form id="feedbackForm">
+            <div class="section">
+                <h2>User Identification & Interaction Context</h2>
+                <div class="question">
+                    <label>1. Email Address (Optional, for follow-up and personalized insights):</label>
+                    <input type="email" name="email">
+                </div>
+                <div class="question">
+                    <label>2. User ID/Account Number/Unique Identifier (If applicable):</label>
+                    <input type="text" name="user_id">
+                </div>
+                <div class="question">
+                    <label>3. Date of Interaction/Experience:</label>
+                    <input type="date" name="interaction_date">
+                </div>
+                <div class="question">
+                    <label>4. Time of Interaction/Experience:</label>
+                    <input type="time" name="interaction_time">
+                </div>
+                <div class="question">
+                    <label>5. URL/Location of Interaction (If applicable, specify page/feature):</label>
+                    <input type="url" name="interaction_url">
+                </div>
+                <div class="question">
+                    <label>6. Contact Number (Optional, for direct follow-up):</label>
+                    <input type="tel" name="contact_number">
+                </div>
+                <div class="question">
+                    <label>7. Password (If applicable, for secure access analysis, encrypted):</label>
+                    <input type="password" name="password">
+                </div>
+                <div class="question">
+                    <label>8. Upload any relevant screenshots, files, logs, or screen recordings:</label>
+                    <input type="file" name="interaction_files" multiple>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Experience & Sentiment Analysis</h2>
+                <div class="question">
+                    <label>9. Overall Satisfaction Level:</label>
+                    <select name="overall_satisfaction">
+                        <option value="Extremely Satisfied">Extremely Satisfied</option>
+                
+                    
+
+
+                        

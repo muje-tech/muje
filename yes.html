@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebCraft Studio</title>
+    <link rel="stylesheet" href="stle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">WebCraft</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+            <div class="hero" id="home">
+                <h1>Crafting Exceptional Web Experiences</h1>
+                <p>We specialize in building stunning and functional websites tailored to your needs.</p>
+                <a href="#services" class="btn">Our Services</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="services" id="services">
+            <div class="container">
+                <h2>Our Web Development Services</h2>
+                <div class="service-grid">
+                    <div class="service">
+                        <i class="fas fa-code"></i>
+                        <h3>Front-End Development</h3>
+                        <p>Creating engaging and responsive user interfaces with HTML, CSS, and JavaScript.</p>
+                    </div>
+                    <div class="service">
+                        <i class="fas fa-server"></i>
+                        <h3>Back-End Development</h3>
+                        <p>Building robust server-side applications with Node.js, Python, and PHP.</p>
+                    </div>
+                    <div class="service">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>Web Design</h3>
+                        <p>Designing visually appealing and user-friendly websites with a focus on aesthetics and usability.</p>
+                    </div>
+                    <div class="service">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Responsive Design</h3>
+                        <p>Ensuring your website looks great and functions perfectly on all devices.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <h2>Our Portfolio</h2>
+                <div class="project-grid">
+                    <div class="project">
+                        <img src="project1.jpg" alt="Project 1">
+                        <h3>Newsletter website</h3>
+                        <p>A fully functional newsletter website.</p>
+                        <a href="news.html" class="btn btn-secondary">View Project</a>
+                    </div>
+                    <div class="project">
+                        <img src="project2.jpg" alt="Project 2">
+                        <h3>Corporate Website</h3>
+                        <p>A professional and informative website for a leading tech company.</p>
+                        <a href="#" class="btn btn-secondary">View Project</a>
+                    </div>
+                    <div class="project">
+                        <img src="project3.jpg" alt="Project 3">
+                        <h3>Portfolio Website</h3>
+                        <p>A creative and personalized website for a freelance designer.</p>
+                        <a href="#" class="btn btn-secondary">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team" id="team">
+            <div class="container">
+                <h2>Meet Our WebCraft Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="team1.jpg" alt="Team Member 1">
+                        <h3>Obende Onomujeyimi</h3>
+                        <p>Full stack developer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="team2.jpg" alt="Team Member 2">
+                        <h3>Obende Onoyimi</h3>
+                        <p>Legal head</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="team3.jpg" alt="Team Member 3">
+                        <h3>David Lee</h3>
+                        <p>UI/UX Designer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <form id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                    <div id="formMessage"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 WebCraft Studio. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    
+      </form>
+</body>
+</html>

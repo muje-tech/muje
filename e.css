@@ -1,0 +1,82 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333; /* Default text color */
+}
+
+.div-container {
+    background-color: white;
+    padding: 40px; /* Increased padding for better spacing */
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
+    width: 400px; /* Increased width for better layout */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px; /* Increased margin for better spacing */
+    color: #2c3e50; /* Darker heading color */
+}
+
+.form-group {
+    margin-bottom: 25px; /* Increased margin for better spacing */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px; /* Slightly increased margin */
+    font-weight: 600; /* Semi-bold label */
+    color: #555; /* Slightly lighter label color */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 24px); /* Account for padding and border */
+    padding: 12px; /* Increased padding */
+    border: 1px solid #ddd;
+    border-radius: 6px; /* Slightly rounded corners */
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #007bff; /* Highlight on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle shadow on focus */
+}
+
+button {
+    width: 100%;
+    padding: 12px; /* Increased padding */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px; /* Slightly rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.error-message {
+    color: #d9534f; /* Red error color */
+    margin-top: 15px; /* Increased margin */
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .div-container {
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 30px;
+    }
+}

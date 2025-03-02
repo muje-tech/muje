@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Video Sharing Platform</title>
+    <link rel="stylesheet" href="l.css">
+    <link href="https://vjs.zencdn.net/7.18.1/video-js.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>My Video Hub</h1>
+        <div class="user-actions">
+            <button id="loginButton">Login</button>
+            <button id="registerButton">Register</button>
+            <button id="uploadButton" style="display: none;">Upload Video</button>
+            <button id="logoutButton" style="display: none;">Logout</button>
+        </div>
+    </header>
+
+    <main>
+        <div id="authForms" style="display: none;">
+            <div id="loginForm">
+                <input type="text" id="loginUsername" placeholder="Username">
+                <input type="password" id="loginPassword" placeholder="Password">
+                <button id="loginSubmit">Login</button>
+                <div id="loginError" class="error-message"></div>
+            </div>
+            <div id="registerForm">
+                <input type="text" id="registerUsername" placeholder="Username">
+                <input type="email" id="registerEmail" placeholder="Email">
+                <input type="password" id="registerPassword" placeholder="Password">
+                <button id="registerSubmit">Register</button>
+                <div id="registerError" class="error-message"></div>
+            </div>
+        </div>
+
+        <div id="uploadForm" style="display: none;">
+            <input type="file" id="videoFile" accept="video/*">
+            <input type="text" id="videoTitle" placeholder="Video Title">
+            <textarea id="videoDescription" placeholder="Description"></textarea>
+            <select id="videoCategory">
+                <option value="general">General</option>
+                <option value="tutorials">Tutorials</option>
+                <option value="music">Music</option>
+                <option value="gaming">Gaming</option>
+            </select>
+            <button id="submitVideo">Submit</button>
+            <div id="uploadStatus"></div>
+        </div>
+
+        <div id="videoList">
+            </div>
+    </main>
+
+    <script src="https://vjs.zencdn.net/7.18.1/video.js"></script>
+    <script src="scrip.js"></script>
+</body>
+</html>
